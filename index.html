@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <!-- given below is Font Awesome CDN link -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+   <link rel="stylesheet" href="style.css">
+   <link rel="icon" type="image/png" href="/Gambar/Logo.png">
+   <title>Webolio | Muhammad Alfi Falan</title>
+</head>
+<body>
+   <div class="container">
+      <nav>
+         <div class="logo">Webolio<b>.</b></div>
+         <ul class="navItems">
+            <li><a href="#">home</a></li>
+            <li><a href="https://drive.google.com/drive/u/0/folders/13SScfPjxKgW22YDSEGOFLyxJj0VIvm45" target="_blank">Portfolio</a></li> <!--https://drive.google.com/file/d/1J72oXQp3X5I9t3veyKJxrWwDzOmterWe/view -->
+            <li><a href="#">skills</a></li>
+            <li><a href="https://medium.com/@muhammadalfifalan" target="_blank">blog</a></li>
+         </ul>
+         <div class="links">
+            <a href="https://www.linkedin.com/in/muhammadalfifalan/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/muhammadalfifalan/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/malfifalaaan" target="_blank"><i class="fab fa-twitter"></i></a>
+         </div>
+      </nav>
+
+      <div class="wrapper">
+         <div class="cols cols0">
+            <span class="topline">Hello</span>
+            <h1>I'm <span class="multiText"></span></h1>
+            <p>a person who is passionate about technology and art also loves to create digital products that have functionality and fun.</p>
+            <div class="btns">
+               <button onclick="window.open('https://drive.google.com/file/d/1cJbTtPIuC-dpYWFpACq3e7BL-fDmvUg2/view')">download CV</button> <!--Bisa Location.href='...' atau Window.open('...')-->
+               <button onclick="window.open('mailto:muhammadalfifalan@gmail.com')">hire me</button>
+            </div>
+         </div>
+         <div class="cols cols1">
+            <div class="imgbox">
+               <img src="/Gambar/Star.png" id="splash">
+               <img src="/Gambar/Profile.png" id="bg">
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+   <script>
+      var typingEffect = new Typed(".multiText",{
+         strings : ["M Alfi Falan","UX Designer","UX Researcher"], // strings : ["coder","youtuber","designer"], 
+         loop : true,
+         typeSpeed : 100,
+         backSpeed : 80,
+         backDelay : 1500
+      })
+   </script>
+</body>
+</html>

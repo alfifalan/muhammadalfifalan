@@ -1,0 +1,205 @@
+/* Given below is Google Fonts CDN link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap');
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'poppins',sans-serif;
+}
+body{
+   overflow: hidden;
+}
+.container{
+   width: 100%;
+   min-height: 100vh;
+   background-color: #f3f5f8;
+}
+nav{
+   display: flex;
+   width: 100%;
+   justify-content: space-around;
+   height: 80px;
+   line-height: 80px;
+   z-index: 111;
+}
+.logo{
+   display: flex;
+   font-size: 35px; 
+   font-weight: 800;
+   color: #3d535f; /*Logo*/
+   letter-spacing: 3px;
+   cursor: pointer;
+   text-transform: uppercase;
+}
+b{
+   font-size: 70px;
+   color: #00915C; /*Lingkaran Kecil di Logo*/
+}
+.navItems{
+   display: flex;
+}
+.navItems li{
+   list-style: none;
+   margin: 0 15px;
+}
+.navItems li a{
+   font-size: 20px; /*Ukuran Font Navigation Links*/
+   color: #3d535f; /*Linke Navbar Before Hover*/
+   letter-spacing: 3px;
+   text-decoration: none;
+   text-transform: capitalize;
+}
+.navItems li:hover a,
+.links a:hover{
+   color: #00915C; /*Linke Navbar After Hover*/
+}
+.links a{
+   font-size: 30px;
+   color: #3d535f; /*Social Media Color Before Hover*/
+   margin: 25px 10px;
+}
+.wrapper{
+   display: flex;
+   width: 100%;
+   height: calc(100vh - 80px);
+   justify-content: center;
+   align-items: center;
+   padding: 0 10%;
+   overflow: hidden;
+}
+.wrapper::before{
+   position: absolute;
+   content: '';
+   height: 500px;
+   width: 500px;
+   border-radius: 50%;
+   left: -12%;
+   top: 40%;
+   background: linear-gradient(45deg,#00915C,#25D394); /* Lingkaran Besar */
+   animation: object1 6s linear infinite;
+}
+.wrapper::after{
+   position: absolute;
+   content: '';
+   height: 150px;
+   width: 150px;
+   border-radius: 50%;
+   left: 35%;
+   top: 12%;
+   background: linear-gradient(45deg,#00915C, #25D394);
+   /*LingkaranSedang*/animation: object2 3s linear infinite;
+   -webkit-animation: object2 6s linear infinite;
+}
+@keyframes  object1{
+   50%{
+      left: -13%;
+      top: 41%;
+   }
+}
+@keyframes  object2{
+   50%{
+      left: 35%;
+      top: 10%;
+   }
+}
+.cols{
+   width: 50%;
+}
+.cols0{
+   width: 60%;
+   z-index: 5;
+}
+.topline{
+   display: block;
+   position: relative;
+   font-size: 35px;
+   letter-spacing: 5px;
+   color: #3d535f; /*Warna font hello*/
+}
+.topline::after{
+   position: absolute;
+   content: '';
+   height: 4px;
+   width: 45px;
+   bottom: 10px;
+   background-color: #00915C; /*Garis Hello*/
+}
+h1{
+   display: block;
+   font-size: 3.5em; /*Default 7em + Ukuran font Im dan auto typenya*/
+   font-weight: 900;
+   color: #3d535f; /*Text I'm dan Type Position*/
+}
+.multiText{
+   color: #00915C;/* Default color  #7f00ff; best green : 00915C /*Auto Type Animation*/
+   text-transform: capitalize;
+}
+p{
+   display: block;
+   width: 90%;
+   font-size: 1.2em;
+   color: #3d535f; /*Description*/
+}
+.btns{
+   width: 100%;
+   position: relative;
+   left: 80px; /*Posisi Button*/
+}
+button{
+   outline: none;
+   border: none;
+   cursor: pointer;
+   font-size: 20px; /*Ukuran Font Button*/
+   font-weight: 400;
+   color: #fff; /*Font Color*/
+   background-color: #3d535f; /*Bg Button*/
+   padding: 8px 14px;
+   margin: 40px 5px;
+   letter-spacing: 2px;
+   text-transform: capitalize;
+   box-shadow: 0 15px 10px rgba(0,0,0,0.4); /*Button Shadow*/
+}
+button:hover{
+   background-color: #00915C; /*Button Hover Color*/
+}
+.imgbox{
+   position: relative;
+   width: 90%;
+   height: 100%;
+}
+.imgbox img{
+   position: relative;
+   height: 100%;
+   width: calc(130% - 80px);
+   top: -100px;
+   right: 50px;
+   transform: rotateY(180deg);
+   animation: animateUser 4s linear infinite;
+}
+@keyframes animateUser{
+   50%{
+      right: 30px;
+      top: -90px;
+   }
+}
+.imgbox #splash{
+   position: absolute;
+   width: 70%;
+   height: 70%;
+   top: 50%;
+   left: 50%;
+   transform: translate(-45%,-40%) rotate(-0deg);
+   width: 160%;
+   /*filter: saturate(200%);*/
+   animation: animate 4s linear infinite;
+}
+.imgbox #bg{
+   transform: translate(20%,0%);
+}
+@keyframes animate{
+   50%{
+      top: 49%;
+      left: 51%;
+      width: 155%;
+   }
+}
